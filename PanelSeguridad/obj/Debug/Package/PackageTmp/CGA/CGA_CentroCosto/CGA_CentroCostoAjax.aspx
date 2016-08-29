@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_CentroCostoAjax.aspx.vb" Inherits="PanelSeguridad.CGA_CentroCostoAjax" %>

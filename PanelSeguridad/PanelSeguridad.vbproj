@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2292BC75-DF94-4971-AB4C-18C6A2BAE5D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PanelSeguridad</RootNamespace>
+    <AssemblyName>PanelSeguridad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PanelSeguridad.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PanelSeguridad.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="ApplicationServices-Implementación" Order="1" Enabled="False">
+          <Destination Path="" />
+          <Object Type="dbFullSql" Enabled="False">
+            <PreSource Path="" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Release\AutoScripts\ApplicationServices-Implementación_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador\Adm_links\Adm_Links.aspx" />
+    <Content Include="Administrador\Adm_links\Adm_Links.js" />
+    <Content Include="Administrador\Adm_links\Adm_LinksAjax.aspx" />
+    <Content Include="Administrador\Adm_links\Adm_LinksTrasaccionsAjax.js" />
+    <Content Include="Administrador\Adm_opcrol\Adm_OpcRol.aspx" />
+    <Content Include="Administrador\Adm_opcrol\Adm_OpcRol.js" />
+    <Content Include="Administrador\Adm_opcrol\Adm_OpcRolAjax.aspx" />
+    <Content Include="Administrador\Adm_opcrol\Adm_OpcRolTrasaccionsAjax.js" />
+    <Content Include="Administrador\Adm_ResetUser\Adm_ResetUser.aspx" />
+    <Content Include="Administrador\Adm_ResetUser\Adm_ResetUser.js" />
+    <Content Include="Administrador\Adm_ResetUser\Adm_ResetUserAjax.aspx" />
+    <Content Include="Administrador\Adm_roles\Adm_Roles.aspx" />
+    <Content Include="Administrador\Adm_roles\Adm_Roles.js" />
+    <Content Include="Administrador\Adm_roles\Adm_RolesAjax.aspx" />
+    <Content Include="Administrador\Adm_roles\Adm_RolesTrasaccionsAjax.js" />
+    <Content Include="Administrador\Adm_Usuario\Adm_Usuario.aspx" />
+    <Content Include="Administrador\Adm_Usuario\Adm_Usuario.js" />
+    <Content Include="Administrador\Adm_Usuario\Adm_UsuarioAjax.aspx" />
+    <Content Include="Administrador\Adm_Usuario\Adm_UsuarioTrasaccionsAjax.js" />
+    <Content Include="Administrador\menu.js" />
+    <Content Include="Administrador\SasifMaster_Cosult.js" />
+    <Content Include="CGA\CGA_Acciones\CGA_Acciones.aspx" />
+    <Content Include="CGA\CGA_Acciones\CGA_Acciones.js" />
+    <Content Include="CGA\CGA_Acciones\CGA_AccionesAjax.aspx" />
+    <Content Include="CGA\CGA_Acciones\CGA_AccionesTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Area\CGA_Area.aspx" />
+    <Content Include="CGA\CGA_Area\CGA_Area.js" />
+    <Content Include="CGA\CGA_Area\CGA_AreaAjax.aspx" />
+    <Content Include="CGA\CGA_Area\CGA_AreaTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazo.aspx" />
+    <Content Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazo.js" />
+    <Content Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoAjax.aspx" />
+    <Content Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Causales\CGA_Causales.aspx" />
+    <Content Include="CGA\CGA_Causales\CGA_Causales.js" />
+    <Content Include="CGA\CGA_Causales\CGA_CausalesAjax.aspx" />
+    <Content Include="CGA\CGA_Causales\CGA_CausalesTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_CentroCosto\CGA_CentroCosto.aspx" />
+    <Content Include="CGA\CGA_CentroCosto\CGA_CentroCosto.js" />
+    <Content Include="CGA\CGA_CentroCosto\CGA_CentroCostoAjax.aspx" />
+    <Content Include="CGA\CGA_CentroCosto\CGA_CentroCostoTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Centro\CGA_Centro.aspx" />
+    <Content Include="CGA\CGA_Centro\CGA_Centro.js" />
+    <Content Include="CGA\CGA_Centro\CGA_CentroAjax.aspx" />
+    <Content Include="CGA\CGA_Centro\CGA_CentroTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Festivos\CGA_Festivos.aspx" />
+    <Content Include="CGA\CGA_Festivos\CGA_Festivos.js" />
+    <Content Include="CGA\CGA_Festivos\CGA_FestivosAjax.aspx" />
+    <Content Include="CGA\CGA_Festivos\CGA_FestivosTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_GrpMaquina\CGA_GrpMaquina.aspx" />
+    <Content Include="CGA\CGA_GrpMaquina\CGA_GrpMaquina.js" />
+    <Content Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaAjax.aspx" />
+    <Content Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_LMaterial\CGA_LMaterial.aspx" />
+    <Content Include="CGA\CGA_LMaterial\CGA_LMaterial.js" />
+    <Content Include="CGA\CGA_LMaterial\CGA_LMaterialAjax.aspx" />
+    <Content Include="CGA\CGA_LMaterial\CGA_LMaterialTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Maquina\CGA_Maquina.aspx" />
+    <Content Include="CGA\CGA_Maquina\CGA_Maquina.js" />
+    <Content Include="CGA\CGA_Maquina\CGA_MaquinaAjax.aspx" />
+    <Content Include="CGA\CGA_Maquina\CGA_MaquinaTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Operario\CGA_Operario.aspx" />
+    <Content Include="CGA\CGA_Operario\CGA_Operario.js" />
+    <Content Include="CGA\CGA_Operario\CGA_OperarioAjax.aspx" />
+    <Content Include="CGA\CGA_Operario\CGA_OperarioTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Pareto\CGA_Pareto.aspx" />
+    <Content Include="CGA\CGA_Pareto\CGA_Pareto.js" />
+    <Content Include="CGA\CGA_Pareto\CGA_ParetoAjax.aspx" />
+    <Content Include="CGA\CGA_Pareto\CGA_ParetoTrasaccionsAjax.js" />
+    <Content Include="CGA\CGA_Turnos\CGA_Turnos.aspx" />
+    <Content Include="CGA\CGA_Turnos\CGA_Turnos.js" />
+    <Content Include="CGA\CGA_Turnos\CGA_TurnosAjax.aspx" />
+    <Content Include="CGA\CGA_Turnos\CGA_TurnosTrasaccionsAjax.js" />
+    <Content Include="CGA\menu.js" />
+    <Content Include="CGA\SasifMaster_Cosult.js" />
+    <Content Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasiva.aspx" />
+    <Content Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasiva.js" />
+    <Content Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaAjax.aspx" />
+    <Content Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaTrasaccionsAjax.js" />
+    <Content Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamiento.aspx" />
+    <Content Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamiento.js" />
+    <Content Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoAjax.aspx" />
+    <Content Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoTrasaccionsAjax.js" />
+    <Content Include="CGA_ASIGNACION\menu.js" />
+    <Content Include="CGA_ASIGNACION\SasifMaster_Cosult.js" />
+    <Content Include="CGA_TURNOS\menu.js" />
+    <Content Include="CGA_TURNOS\Operacional\OpeTurnos.aspx" />
+    <Content Include="CGA_TURNOS\Operacional\OpeTurnos.js" />
+    <Content Include="CGA_TURNOS\Operacional\OpeTurnosAjax.aspx" />
+    <Content Include="CGA_TURNOS\Operacional\OpeTurnosTrasaccionsAjax.js" />
+    <Content Include="CGA_TURNOS\Operacional\OpeTurnos_Calc.js" />
+    <Content Include="CGA_TURNOS\SasifMaster_Cosult.js" />
+    <Content Include="CGA_TVC\Informes\CGA_Notificaciones.aspx" />
+    <Content Include="CGA_TVC\Informes\CGA_Notificaciones.js" />
+    <Content Include="CGA_TVC\Informes\CGA_NotificacionesAjax.aspx" />
+    <Content Include="CGA_TVC\Informes\CGA_NotificacionesTrasaccionsAjax.js" />
+    <Content Include="CGA_TVC\Informes\CGA_TVC_Inf.aspx" />
+    <Content Include="CGA_TVC\Informes\CGA_TVC_Inf.js" />
+    <Content Include="CGA_TVC\Informes\CGA_TVC_InfAjax.aspx" />
+    <Content Include="CGA_TVC\Informes\CGA_TVC_InfTrasaccionsAjax.js" />
+    <Content Include="CGA_TVC\Informes\CGA_TVC_Inf_Calc.js" />
+    <Content Include="CGA_TVC\menu.js" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_Op.aspx" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_Op.js" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_OpAjax.aspx" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_OpDet.aspx" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_OpDet.js" />
+    <Content Include="CGA_TVC\Operacional\CGA_TVC_OpTrasaccionsAjax.js" />
+    <Content Include="CGA_TVC\SasifMaster_Cosult.js" />
+    <Content Include="css\css_controles.css" />
+    <Content Include="css\css_form.css" />
+    <Content Include="css\css_login.css" />
+    <Content Include="css\css_menu.css" />
+    <Content Include="css\css_master.css" />
+    <Content Include="css\custom\charge.css" />
+    <Content Include="css\datatables\images\back_disabled.png" />
+    <Content Include="css\datatables\images\back_enabled.png" />
+    <Content Include="css\datatables\images\back_enabled_hover.png" />
+    <Content Include="css\datatables\images\favicon.ico" />
+    <Content Include="css\datatables\images\forward_disabled.png" />
+    <Content Include="css\datatables\images\forward_enabled.png" />
+    <Content Include="css\datatables\images\forward_enabled_hover.png" />
+    <Content Include="css\datatables\images\sort_asc.png" />
+    <Content Include="css\datatables\images\sort_asc_disabled.png" />
+    <Content Include="css\datatables\images\sort_both.png" />
+    <Content Include="css\datatables\images\sort_desc.png" />
+    <Content Include="css\datatables\images\sort_desc_disabled.png" />
+    <Content Include="css\datatables\jquery.dataTables.css" />
+    <Content Include="css\datatables\jquery.dataTables_themeroller.css" />
+    <Content Include="css\Dialog\images\animated-overlay.gif" />
+    <Content Include="css\Dialog\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="css\Dialog\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="css\Dialog\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\Dialog\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="css\Dialog\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="css\Dialog\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="css\Dialog\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="css\Dialog\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="css\Dialog\jquery-ui-1.10.4.custom.css" />
+    <Content Include="css\Dialog\jquery-ui.css" />
+    <Content Include="css\icons\document.png" />
+    <Content Include="css\icons\folder-horizontal.png" />
+    <Content Include="css\icons\right.png" />
+    <Content Include="css\icons\toggle-small-expand.png" />
+    <Content Include="css\icons\toggle-small.png" />
+    <Content Include="css\PIE.htc" />
+    <Content Include="css\theme_blue_Sky\images\active.png" />
+    <Content Include="css\theme_blue_Sky\images\default.png" />
+    <Content Include="css\theme_blue_Sky\images\header.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="css\theme_blue_Sky\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\theme_blue_Sky\theme.css" />
+    <Content Include="images\actualizar.gif" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\alert.png" />
+    <Content Include="images\archivo.gif" />
+    <Content Include="images\autorizar.gif" />
+    <Content Include="images\ayuda.gif" />
+    <Content Include="images\barra_de_progreso.gif" />
+    <Content Include="images\cabeza2.jpg" />
+    <Content Include="images\carga.gif" />
+    <Content Include="images\componentes.gif" />
+    <Content Include="images\consulta.gif" />
+    <Content Include="images\correo.gif" />
+    <Content Include="images\crear.gif" />
+    <Content Include="images\cronograma.gif" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\document.gif" />
+    <Content Include="images\Documentos.gif" />
+    <Content Include="images\eliminar.gif" />
+    <Content Include="images\error.png" />
+    <Content Include="images\exit.png" />
+    <Content Include="images\file.jpg" />
+    <Content Include="images\folder_collapsed.gif" />
+    <Content Include="images\folder_extended.gif" />
+    <Content Include="images\fondo1.jpg" />
+    <Content Include="images\fondo11.jpg" />
+    <Content Include="images\informa.gif" />
+    <Content Include="images\logo-actual.png" />
+    <Content Include="images\mapa.gif" />
+    <Content Include="images\mensajes.gif" />
+    <Content Include="images\menu1.jpg" />
+    <Content Include="images\menu2.jpg" />
+    <Content Include="images\menu3.jpg" />
+    <Content Include="images\menu4.jpg" />
+    <Content Include="images\presupuesto.gif" />
+    <Content Include="images\salir.gif" />
+    <Content Include="images\sasif1.gif" />
+    <Content Include="images\semam.gif" />
+    <Content Include="images\semro.gif" />
+    <Content Include="images\semve.gif" />
+    <Content Include="images\success.png" />
+    <Content Include="images\tabla.gif" />
+    <Content Include="images\unidad.gif" />
+    <Content Include="images\validation.png" />
+    <Content Include="login\CambioPassword.aspx" />
+    <Content Include="login\CambioPassword.js" />
+    <Content Include="login\CambioPasswordAjax.aspx" />
+    <Content Include="login\Login.js" />
+    <Content Include="login\LoginAjax.aspx" />
+    <Content Include="login\Login_CGA.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Menu\menu.aspx" />
+    <Content Include="Menu\menu.js" />
+    <Content Include="Menu\menuAjax.aspx" />
+    <Content Include="Menu\SasifMaster_Cosult.js" />
+    <Content Include="SasifMaster.js" />
+    <Content Include="procesos_generales\SasifMasterAjax.aspx" />
+    <Content Include="SasifMaster_Cosult.js" />
+    <Content Include="Scripts\Dialog\datepicker.js" />
+    <Content Include="Scripts\Dialog\jquery-1.10.2.js" />
+    <Content Include="Scripts\Dialog\jquery-ui-1.10.4.custom.js" />
+    <Content Include="Scripts\Dialog\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Scripts\Dialog\jquery-ui.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\Adm_links\Adm_Links.aspx.designer.vb">
+      <DependentUpon>Adm_Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_links\Adm_Links.aspx.vb">
+      <DependentUpon>Adm_Links.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_links\Adm_LinksSQLClass.vb" />
+    <Compile Include="Administrador\Adm_links\Adm_LinksAjax.aspx.designer.vb">
+      <DependentUpon>Adm_LinksAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_links\Adm_LinksAjax.aspx.vb">
+      <DependentUpon>Adm_LinksAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_links\Adm_LinksClass.vb" />
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRol.aspx.designer.vb">
+      <DependentUpon>Adm_OpcRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRol.aspx.vb">
+      <DependentUpon>Adm_OpcRol.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRolAjax.aspx.designer.vb">
+      <DependentUpon>Adm_OpcRolAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRolAjax.aspx.vb">
+      <DependentUpon>Adm_OpcRolAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRolClass.vb" />
+    <Compile Include="Administrador\Adm_opcrol\Adm_OpcRolSQLClass.vb" />
+    <Compile Include="Administrador\Adm_ResetUser\Adm_ResetUser.aspx.designer.vb">
+      <DependentUpon>Adm_ResetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_ResetUser\Adm_ResetUser.aspx.vb">
+      <DependentUpon>Adm_ResetUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_ResetUser\Adm_ResetUserAjax.aspx.designer.vb">
+      <DependentUpon>Adm_ResetUserAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_ResetUser\Adm_ResetUserAjax.aspx.vb">
+      <DependentUpon>Adm_ResetUserAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_roles\Adm_Roles.aspx.designer.vb">
+      <DependentUpon>Adm_Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_roles\Adm_Roles.aspx.vb">
+      <DependentUpon>Adm_Roles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_roles\Adm_RolesAjax.aspx.designer.vb">
+      <DependentUpon>Adm_RolesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_roles\Adm_RolesAjax.aspx.vb">
+      <DependentUpon>Adm_RolesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_roles\Adm_RolesClass.vb" />
+    <Compile Include="Administrador\Adm_roles\Adm_RolesSQLClass.vb" />
+    <Compile Include="Administrador\Adm_Usuario\Adm_Usuario.aspx.designer.vb">
+      <DependentUpon>Adm_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_Usuario\Adm_Usuario.aspx.vb">
+      <DependentUpon>Adm_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_Usuario\Adm_UsuarioAjax.aspx.designer.vb">
+      <DependentUpon>Adm_UsuarioAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Adm_Usuario\Adm_UsuarioAjax.aspx.vb">
+      <DependentUpon>Adm_UsuarioAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Adm_Usuario\Adm_UsuarioClass.vb" />
+    <Compile Include="Administrador\Adm_Usuario\Adm_UsuarioSQLClass.vb" />
+    <Compile Include="CGA\CGA_Acciones\CGA_Acciones.aspx.designer.vb">
+      <DependentUpon>CGA_Acciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Acciones\CGA_Acciones.aspx.vb">
+      <DependentUpon>CGA_Acciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Acciones\CGA_AccionesAjax.aspx.designer.vb">
+      <DependentUpon>CGA_AccionesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Acciones\CGA_AccionesAjax.aspx.vb">
+      <DependentUpon>CGA_AccionesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Acciones\CGA_AccionesClass.vb" />
+    <Compile Include="CGA\CGA_Acciones\CGA_AccionesSQLClass.vb" />
+    <Compile Include="CGA\CGA_Area\CGA_Area.aspx.designer.vb">
+      <DependentUpon>CGA_Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Area\CGA_Area.aspx.vb">
+      <DependentUpon>CGA_Area.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Area\CGA_AreaAjax.aspx.designer.vb">
+      <DependentUpon>CGA_AreaAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Area\CGA_AreaAjax.aspx.vb">
+      <DependentUpon>CGA_AreaAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Area\CGA_AreaClass.vb" />
+    <Compile Include="CGA\CGA_Area\CGA_AreaSQLClass.vb" />
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazo.aspx.designer.vb">
+      <DependentUpon>CGA_CausalesAtrazo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazo.aspx.vb">
+      <DependentUpon>CGA_CausalesAtrazo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoAjax.aspx.designer.vb">
+      <DependentUpon>CGA_CausalesAtrazoAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoAjax.aspx.vb">
+      <DependentUpon>CGA_CausalesAtrazoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoClass.vb" />
+    <Compile Include="CGA\CGA_CausalesAtrazo\CGA_CausalesAtrazoSQLClass.vb" />
+    <Compile Include="CGA\CGA_Causales\CGA_Causales.aspx.designer.vb">
+      <DependentUpon>CGA_Causales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Causales\CGA_Causales.aspx.vb">
+      <DependentUpon>CGA_Causales.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Causales\CGA_CausalesAjax.aspx.designer.vb">
+      <DependentUpon>CGA_CausalesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Causales\CGA_CausalesAjax.aspx.vb">
+      <DependentUpon>CGA_CausalesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Causales\CGA_CausalesClass.vb" />
+    <Compile Include="CGA\CGA_Causales\CGA_CausalesSQLClass.vb" />
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCosto.aspx.designer.vb">
+      <DependentUpon>CGA_CentroCosto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCosto.aspx.vb">
+      <DependentUpon>CGA_CentroCosto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCostoAjax.aspx.designer.vb">
+      <DependentUpon>CGA_CentroCostoAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCostoAjax.aspx.vb">
+      <DependentUpon>CGA_CentroCostoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCostoClass.vb" />
+    <Compile Include="CGA\CGA_CentroCosto\CGA_CentroCostoSQLClass.vb" />
+    <Compile Include="CGA\CGA_Centro\CGA_Centro.aspx.designer.vb">
+      <DependentUpon>CGA_Centro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Centro\CGA_Centro.aspx.vb">
+      <DependentUpon>CGA_Centro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Centro\CGA_CentroAjax.aspx.designer.vb">
+      <DependentUpon>CGA_CentroAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Centro\CGA_CentroAjax.aspx.vb">
+      <DependentUpon>CGA_CentroAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Centro\CGA_CentroClass.vb" />
+    <Compile Include="CGA\CGA_Centro\CGA_CentroSQLClass.vb" />
+    <Compile Include="CGA\CGA_Festivos\CGA_Festivos.aspx.designer.vb">
+      <DependentUpon>CGA_Festivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Festivos\CGA_Festivos.aspx.vb">
+      <DependentUpon>CGA_Festivos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Festivos\CGA_FestivosAjax.aspx.designer.vb">
+      <DependentUpon>CGA_FestivosAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Festivos\CGA_FestivosAjax.aspx.vb">
+      <DependentUpon>CGA_FestivosAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Festivos\CGA_FestivosClass.vb" />
+    <Compile Include="CGA\CGA_Festivos\CGA_FestivosSQLClass.vb" />
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquina.aspx.designer.vb">
+      <DependentUpon>CGA_GrpMaquina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquina.aspx.vb">
+      <DependentUpon>CGA_GrpMaquina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaAjax.aspx.designer.vb">
+      <DependentUpon>CGA_GrpMaquinaAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaAjax.aspx.vb">
+      <DependentUpon>CGA_GrpMaquinaAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaClass.vb" />
+    <Compile Include="CGA\CGA_GrpMaquina\CGA_GrpMaquinaSQLClass.vb" />
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterial.aspx.designer.vb">
+      <DependentUpon>CGA_LMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterial.aspx.vb">
+      <DependentUpon>CGA_LMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterialAjax.aspx.designer.vb">
+      <DependentUpon>CGA_LMaterialAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterialAjax.aspx.vb">
+      <DependentUpon>CGA_LMaterialAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterialClass.vb" />
+    <Compile Include="CGA\CGA_LMaterial\CGA_LMaterialSQLClass.vb" />
+    <Compile Include="CGA\CGA_Maquina\CGA_Maquina.aspx.designer.vb">
+      <DependentUpon>CGA_Maquina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Maquina\CGA_Maquina.aspx.vb">
+      <DependentUpon>CGA_Maquina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Maquina\CGA_MaquinaAjax.aspx.designer.vb">
+      <DependentUpon>CGA_MaquinaAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Maquina\CGA_MaquinaAjax.aspx.vb">
+      <DependentUpon>CGA_MaquinaAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Maquina\CGA_MaquinaClass.vb" />
+    <Compile Include="CGA\CGA_Maquina\CGA_MaquinaSQLClass.vb" />
+    <Compile Include="CGA\CGA_Operario\CGA_Operario.aspx.designer.vb">
+      <DependentUpon>CGA_Operario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Operario\CGA_Operario.aspx.vb">
+      <DependentUpon>CGA_Operario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Operario\CGA_OperarioAjax.aspx.designer.vb">
+      <DependentUpon>CGA_OperarioAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Operario\CGA_OperarioAjax.aspx.vb">
+      <DependentUpon>CGA_OperarioAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Operario\CGA_OperarioClass.vb" />
+    <Compile Include="CGA\CGA_Operario\CGA_OperarioSQLClass.vb" />
+    <Compile Include="CGA\CGA_Pareto\CGA_Pareto.aspx.designer.vb">
+      <DependentUpon>CGA_Pareto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Pareto\CGA_Pareto.aspx.vb">
+      <DependentUpon>CGA_Pareto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Pareto\CGA_ParetoAjax.aspx.designer.vb">
+      <DependentUpon>CGA_ParetoAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Pareto\CGA_ParetoAjax.aspx.vb">
+      <DependentUpon>CGA_ParetoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Pareto\CGA_ParetoClass.vb" />
+    <Compile Include="CGA\CGA_Pareto\CGA_ParetoSQLClass.vb" />
+    <Compile Include="CGA\CGA_Turnos\CGA_Turnos.aspx.designer.vb">
+      <DependentUpon>CGA_Turnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Turnos\CGA_Turnos.aspx.vb">
+      <DependentUpon>CGA_Turnos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Turnos\CGA_TurnosAjax.aspx.designer.vb">
+      <DependentUpon>CGA_TurnosAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA\CGA_Turnos\CGA_TurnosAjax.aspx.vb">
+      <DependentUpon>CGA_TurnosAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA\CGA_Turnos\CGA_TurnosClass.vb" />
+    <Compile Include="CGA\CGA_Turnos\CGA_TurnosSQLClass.vb" />
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasiva.aspx.designer.vb">
+      <DependentUpon>CGA_CargaPasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasiva.aspx.vb">
+      <DependentUpon>CGA_CargaPasiva.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaAjax.aspx.designer.vb">
+      <DependentUpon>CGA_CargaPasivaAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaAjax.aspx.vb">
+      <DependentUpon>CGA_CargaPasivaAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaClass.vb" />
+    <Compile Include="CGA_ASIGNACION\CGA_CargaPasiva\CGA_CargaPasivaSQLClass.vb" />
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamiento.aspx.designer.vb">
+      <DependentUpon>CGA_VDesbordamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamiento.aspx.vb">
+      <DependentUpon>CGA_VDesbordamiento.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoAjax.aspx.designer.vb">
+      <DependentUpon>CGA_VDesbordamientoAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoAjax.aspx.vb">
+      <DependentUpon>CGA_VDesbordamientoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoClass.vb" />
+    <Compile Include="CGA_ASIGNACION\CGA_VDesbordamiento\CGA_VDesbordamientoSQLClass.vb" />
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnos.aspx.designer.vb">
+      <DependentUpon>OpeTurnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnos.aspx.vb">
+      <DependentUpon>OpeTurnos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnosAjax.aspx.designer.vb">
+      <DependentUpon>OpeTurnosAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnosAjax.aspx.vb">
+      <DependentUpon>OpeTurnosAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnosClass.vb" />
+    <Compile Include="CGA_TURNOS\Operacional\OpeTurnosSQLClass.vb" />
+    <Compile Include="CGA_TVC\Informes\CGA_Notificaciones.aspx.designer.vb">
+      <DependentUpon>CGA_Notificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_Notificaciones.aspx.vb">
+      <DependentUpon>CGA_Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_NotificacionesAjax.aspx.designer.vb">
+      <DependentUpon>CGA_NotificacionesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_NotificacionesAjax.aspx.vb">
+      <DependentUpon>CGA_NotificacionesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_NotificacionesClass.vb" />
+    <Compile Include="CGA_TVC\Informes\CGA_NotificacionesSQLClass.vb" />
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_Inf.aspx.designer.vb">
+      <DependentUpon>CGA_TVC_Inf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_Inf.aspx.vb">
+      <DependentUpon>CGA_TVC_Inf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_InfAjax.aspx.designer.vb">
+      <DependentUpon>CGA_TVC_InfAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_InfAjax.aspx.vb">
+      <DependentUpon>CGA_TVC_InfAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_InfClass.vb" />
+    <Compile Include="CGA_TVC\Informes\CGA_TVC_InfSQLClass.vb" />
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OPDetClass.vb" />
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_Op.aspx.designer.vb">
+      <DependentUpon>CGA_TVC_Op.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_Op.aspx.vb">
+      <DependentUpon>CGA_TVC_Op.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpAjax.aspx.designer.vb">
+      <DependentUpon>CGA_TVC_OpAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpAjax.aspx.vb">
+      <DependentUpon>CGA_TVC_OpAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpClass.vb" />
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpDet.aspx.designer.vb">
+      <DependentUpon>CGA_TVC_OpDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpDet.aspx.vb">
+      <DependentUpon>CGA_TVC_OpDet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CGA_TVC\Operacional\CGA_TVC_OpSQLClass.vb" />
+    <Compile Include="conexion_BD\Conector.vb" />
+    <Compile Include="procesos_generales\Droplist_Class.vb" />
+    <Compile Include="encriptracion\EncriptarClass.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login\CambioPassword.aspx.designer.vb">
+      <DependentUpon>CambioPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\CambioPassword.aspx.vb">
+      <DependentUpon>CambioPassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\CambioPasswordAjax.aspx.designer.vb">
+      <DependentUpon>CambioPasswordAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\CambioPasswordAjax.aspx.vb">
+      <DependentUpon>CambioPasswordAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\LoginAjax.aspx.designer.vb">
+      <DependentUpon>LoginAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\LoginAjax.aspx.vb">
+      <DependentUpon>LoginAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\LoginClass.vb" />
+    <Compile Include="login\LoginSQLClass.vb" />
+    <Compile Include="login\Login_CGA.aspx.designer.vb">
+      <DependentUpon>Login_CGA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\Login_CGA.aspx.vb">
+      <DependentUpon>Login_CGA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Menu\menu.aspx.designer.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\menu.aspx.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Menu\menuAjax.aspx.designer.vb">
+      <DependentUpon>menuAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\menuAjax.aspx.vb">
+      <DependentUpon>menuAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuClass.vb" />
+    <Compile Include="Menu\MenuSQLClass.vb" />
+    <Compile Include="Menu\Sasif_menu.Master.designer.vb">
+      <DependentUpon>Sasif_menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Sasif_menu.Master.vb">
+      <DependentUpon>Sasif_menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="procesos_generales\GeneralSQLClass.vb" />
+    <Compile Include="Sasif.Master.designer.vb">
+      <DependentUpon>Sasif.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sasif.Master.vb">
+      <DependentUpon>Sasif.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="procesos_generales\SasifMasterAjax.aspx.designer.vb">
+      <DependentUpon>SasifMasterAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="procesos_generales\SasifMasterAjax.aspx.vb">
+      <DependentUpon>SasifMasterAjax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Menu\Sasif_menu.Master" />
+    <Content Include="Administrador\Sasif_menu.Master" />
+    <Content Include="CGA\Sasif_menu.Master" />
+    <Content Include="CGA_TVC\Sasif_menu.Master" />
+    <Content Include="CGA_ASIGNACION\Sasif_menu.Master" />
+    <Content Include="CGA_TURNOS\Sasif_menu.Master" />
+    <None Include="css\datatables\images\Sorting icons.psd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Sasif.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4688</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

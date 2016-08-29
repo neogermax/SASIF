@@ -1,0 +1,61 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Sasif.master.vb" Inherits="PanelSeguridad.Sasif" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/css_master.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="page" class="page">
+        <div id="Header" class="header">
+            <div class="title">
+                <table width="100%">
+                    <tr>
+                        <td id="LogoInt" rowspan="3" style="width: 15%; text-align: center;">
+                            <img id="logo_2" src="" alt="SASIF S.A." style="height: 80px; width: 120px; padding-top:25px"/>
+                        </td>
+                        <td id="Hours" colspan="3" style="width: 70%; text-align: center;">
+                        </td>
+                        <td id="logoExt" rowspan="3" style="width: 15%; text-align: center;">
+                            &nbsp;<img alt="" src="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Title" colspan="3" style="width: 70%; text-align: center;">
+                            <h2 id="tituloPrincipal">
+                                &nbsp;</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="User" colspan="3" style="width: 70%; text-align: center;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="Medium" class="main">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Footer" class="footer">
+            <table width="100%">
+                <tr>
+                    <td style="text-align: center;">
+                        <p id="Parraf_1">
+                        </p>
+                        <p id="Parraf_2">
+                        </p>
+                        <p id="Parraf_3">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

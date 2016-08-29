@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_GrpMaquinaAjax.aspx.vb" Inherits="PanelSeguridad.CGA_GrpMaquinaAjax" %>

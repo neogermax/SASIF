@@ -1,0 +1,305 @@
+﻿/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CONTROLES FUENTE PARA TODOS LOS CAMPOS POR DEFECTO                                                                                 */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4
+{
+    font-family: 16px/20px Verdana,sans-serif;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CONTROLES INPUT TYPE TEXT & PASSWORD                                                                                 */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+input[type='text'], input[type='password']
+{
+    border: none;
+    padding: 2px 0px 2px 8px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width:160px;
+}
+
+input[id='Circulo']
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: solid 1.5px;
+    color: gray;
+}
+
+.Label_bold
+{
+    font-weight: bold;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CONTROLES INPUT TYPE BUTTON                                                                                 */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+input[type='button']
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 3px;
+    border-color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+    font: 14px/20px Verdana,sans-serif;
+    color: White;
+    width: 110px;
+    border: none;
+}
+
+input[type='button']:hover
+{
+    padding: 5px 2px 5px 2px;
+    border-radius: 3px;
+    border-color: White;
+    background: -webkit-linear-gradient(#ADC3D4, #88B3D4); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ADC3D4, #88B3D4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ADC3D4, #88B3D4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ADC3D4, #88B3D4); /* Standard syntax (must be last)*/
+    font: 14px/20px Verdana,sans-serif;
+    color: Aqua;
+    width: 110px;
+    border: none;
+}
+
+#BtnExit
+{
+    width: 20px;
+    height: 20px;
+    padding: 1px 2px 1px 2px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               CONTROLES SELECT                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+select
+{
+    padding: 2px 0px 2px 8px;
+    border-radius: 3px;
+    border-color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+    width: 170px;
+    color: White;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+option
+{
+    font: 14px/20px Verdana,sans-serif;
+    color: #194769;
+    background: #C6DEFF;
+}
+
+.select_medium
+{
+    padding: 2px 0px 2px 8px;
+    border-radius: 3px;
+    border-color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+    width: 220px;
+    color: White;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+.select_large
+{
+    padding: 2px 0px 2px 8px;
+    border-radius: 3px;
+    border-color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+    width: 350px;
+    color: White;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           ACORDION JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.ui-accordion .ui-accordion-content
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    padding: 10px 10px;
+    border-radius: 0px 0px 7px 7px;
+    border-color: #79b7e7;
+    border-width: 1px;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+.ui-accordion .ui-accordion-header
+{
+    border-radius: 7px 7px 0px 0px;
+    border-color: #79b7e7;
+    border-width: 1px;
+    font: 14px/20px Verdana,sans-serif;
+    color: #2E6E9E;
+    font-weight: bold;
+}
+.ui-accordion .ui-accordion-header-active
+{
+    color: black;
+}
+
+.ui-accordion .ui-accordion-header:hover
+{
+    border-color: gray;
+    color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               TABS JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ui-tabs .ui-tabs-panel
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    padding: 10px 10px;
+    border-color: #79b7e7;
+    border-width: 1px;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+    border-color: White;
+    color: White;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               DIALOG JQUERY                                                                                  */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.Dialog_personal
+{
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #79b7e7;
+    border-width: 1px;
+    font: 14px/20px Verdana,sans-serif;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               TOOL TIP                                                                                     */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Clase que tendra el tooltip */
+.cssToolTip
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #D8D104; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip span
+{
+    background: rgba(20,20,20,0.9) url('../../images/alert.png') center left 5px no-repeat;
+    border: 2px solid #D8D104;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #D8D104;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 0.8em;
+    padding: 10px 10px 10px 50px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 15px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    left: 100px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+
+/* Clase que tendra el tooltip */
+.cssToolTip_ver
+{
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    color: #87cefa; /* Color del texto */
+}
+
+/* El tooltip */
+.cssToolTip_ver span
+{
+    background: rgba(20,20,20,0.7);
+    border: 2px solid #87cefa;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #87cefa;
+    display: none; /* El tooltip por defecto estara oculto */
+    font-size: 0.8em;
+    padding: 10px 10px 10px 10px;
+    max-width: 6000px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+    top: 10px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+    left: 10px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+    z-index: 1000; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip_ver:hover span
+{
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+img[src='../images/error.png'], img[src='../../images/error.png']
+{
+    position: absolute;
+}
+
+label
+{
+    color: black;
+}
+
+.Grid_Festivos
+{
+    color: #0BA50F;
+    font-weight: bold;
+}
+
+.Grid_Domingos
+{
+    color: #06326F;
+    font-weight: bold;
+}
+

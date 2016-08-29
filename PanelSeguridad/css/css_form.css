@@ -1,0 +1,520 @@
+﻿/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               ADMININSTRACION PARAMETRIZABLE                                                               */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de la barra de titulo*/
+#Container_title_Form
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: 95%;
+}
+
+#Tabla_Title_form
+{
+    width: 100%;
+}
+
+#image_exit
+{
+    text-align: end;
+}
+
+#panel_pag
+{
+    vertical-align: text-top;
+    padding-left: 30px;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion marco del formulario*/
+
+#Marco_link
+{
+    margin-top: 10px;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 90%;
+}
+
+#Marco_btn_Form
+{
+    margin-top: 1px;
+    padding: 20px 20px;
+    border-radius: 15px 15px 15px 15px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 95%;
+    height: 40px;
+    text-align: center;
+}
+
+#Marco_trabajo_Form
+{
+    margin-top: 10px;
+    padding: 20px 20px;
+    border-radius: 15px 15px 15px 15px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 95%;
+    height: 300px;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las tablas de consultas link, roles, ocp rol, usuarios*/
+
+#container_Tlink, #container_Trol, #container_TopcRol, #container_TUser
+{
+    width: 800px;
+    height: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de los formularios internos*/
+
+#TablaDatos
+{
+    width: 100%;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+
+/*-------------- container carga pasiva --------------------------------*/
+#Container_title_CP
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: 98%;
+}
+
+#Marco_CP
+{
+    margin-top: 10px;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 95%;
+}
+
+
+#TablaDatos_CP
+{
+    width: 100%; /*padding: 20px 26px;*/
+    padding: 20px 15px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+
+
+#container_TTVC
+{
+    width: 100%;
+    padding: 20px 26px;
+    border-radius: 0 0 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    margin-top: 5px;
+}
+
+
+#Marco_DES
+{
+    margin-top: 10px;
+    padding: 20px 10px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 95%;
+    font: 12px/20px Verdana,sans-serif;
+}
+
+#TablaConsulta_DES
+{
+    width: 800px;
+    padding: 20px 22px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    text-align: center;
+    font: 12px/20px Verdana,sans-serif;
+}
+
+
+#container_TVDesbordamiento
+{
+    width: 880px;
+    height: 200px;
+    overflow: auto;
+}
+
+
+#TablaConsulta
+{
+    width: 100%;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    text-align: center;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las cajas de texto */
+#TxtRuta
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 90%;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA ADMININSTRACION PARAMETRIZABLE                                                               */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las tablas de consultas link, roles, ocp rol, usuarios*/
+
+#container_TAcciones, #container_TArea, #container_TCausales, #container_TCentro, #container_TCentroCosto, #container_TGrpMaqunas, #container_TMaquina, #container_TOperario, #container_TTurnos, #container_TFestivo
+{
+    width: 800px;
+    height: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+/*------------------- ajuste de grid administracion -----------------------------------------------*/
+#TLink, #TOpcRol, #TRol, #TUser
+{
+    font: 12px/20px Verdana,sans-serif;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA PARAMETRIZACION PROCESOS                                                               */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------- ajuste de grid parametrizacion -----------------------------------------------*/
+#TCentro, #TGrpMaqunas, #TMaquina, #TCCostos, #TArea, #TOperario, #TCausales, #TAcciones, #TTurnos, #TPareto, #TLMaterial, #TCausalesAtrazo, #TFestivo
+{
+    font: 12px/20px Verdana,sans-serif;
+}
+
+/*------------------- ajuste de grid asignacion -----------------------------------------------*/
+
+#TCargaPasiva, #TTVC, #TTVCDET, #T_Centro, #T_GrpMaq, #T_Maq, #T_Orden, #T_GTurno
+{
+    font: 12px/20px Verdana,sans-serif;
+}
+
+/*----------------------- TAB MAQUINA ---------------------------*/
+/*personalizacion de las tablas de consultas link, roles, ocp rol, usuarios*/
+
+#TablaDatos_3
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    padding: 10px 10px;
+    border-color: #79b7e7;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+}
+
+#TablaDatos_2
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    padding: 10px 10px;
+    border-color: #79b7e7;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    width: 100%;
+}
+
+#Tab_Maquina
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    padding: 10px 10px;
+    border-color: #79b7e7;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    font: 14px/20px Verdana,sans-serif;
+}
+
+#Mante, #T_NO_disp
+{
+    width: 100%;
+}
+
+
+#C_guardar, #TV_General, #T_V_dimenciones, #TD_V_Mantenimiento, #TD_V_NoDis
+{
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA TVC                                                                                          */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#Container_title_TVC
+{
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: 990px;
+}
+
+#Marco_TVC
+{
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    width: 970px;
+    height: 520px;
+}
+
+#TablaDatos_TVC
+{
+    width: 970px;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+
+#container_TTVC
+{
+    width: 907px;
+    height: 300px;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    overflow: auto;
+}
+
+#DateStart, #DateEnd
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 120px;
+    text-align: center;
+}
+
+#TD_btnConsuta
+{
+    text-align: center;
+}
+
+
+#TD_L_TVC
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA TVC >> Detalle                                                                                 */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#TablaDatos_TVCDet
+{
+    width: 970px;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+
+#container_TTVCDET
+{
+    width: 907px;
+    height: 330px;
+    padding: 20px 26px;
+    border-radius: 20px 20px 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+    overflow: auto;
+}
+
+#container_TTVC_INFO
+{
+}
+
+#TxtID_Operario, #DateAccion
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 150px;
+    text-align: center;
+}
+
+#TxtObserOpe, #TxtDescripAnalis
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 260px;
+    border-radius: 7px;
+}
+
+
+#LblOrden, #LblOperacion, #LblFLiber, #LblFCier, #LblFDespacho, #LblEstado, #lblPlanta
+{
+    font: 12px/18px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA >> Notificaciones                                                                            */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#D_Orden, #D_Centro, #D_Maquina, #ZPP078_1, #ZPP078_2, #ZPP078_3, #ZPP078_4, #ZPP078_5, #ZPP078_6, #ZPP078_7
+{
+    font: 12px/18px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+#ZPP079_1, #ZPP079_2, #ZPP079_3, #ZPP079_4, #ZPP079_5, #ZPP079_6, #ZPP079_7
+{
+    font: 12px/18px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+#KSB1_1, #KSB1_2, #KSB1_3, #KSB1_4, #KSB1_5, #KSB1_6, #KSB1_7
+{
+    font: 12px/18px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+
+#D_Planta, #D_GrpMaq, #D_Maq, #D_TVC
+{
+    font: 12px/18px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+#TD_H_Prog
+{
+    width: 450px;
+    font: 14px/18px Verdana,sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#89B7DA, #6EA7D2); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#89B7DA, #6EA7D2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#89B7DA, #6EA7D2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#89B7DA, #6EA7D2); /* Standard syntax (must be last)*/
+    color: White;
+    border-radius: 2px;
+}
+
+#L_horas
+{
+    border: solid 1px #89B7DA;
+    height: 20px;
+    background: #F0FFFF;
+    border-radius: 2px;
+}

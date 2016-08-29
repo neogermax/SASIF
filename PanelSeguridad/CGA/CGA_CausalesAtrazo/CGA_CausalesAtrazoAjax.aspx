@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_CausalesAtrazoAjax.aspx.vb" Inherits="PanelSeguridad.CGA_CausalesAtrazoAjax" %>

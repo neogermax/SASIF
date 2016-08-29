@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Sasif_menu.master.vb"
+    Inherits="PanelSeguridad.Sasif_menu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/css_master.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../../SasifMaster.js" type="text/javascript"></script>
+    <link href="../css/css_menu.css" rel="stylesheet" type="text/css" />
+    <script src="../menu.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <table width="100%">
+                    <tr>
+                        <td id="LogoInt" rowspan="4" style="width: 15%; text-align: center;">
+                            <img src="../../images/sasif1.gif" alt="SASIF S.A." style="height: 101px; width: 101px">
+                        </td>
+                        <td id="Hours" colspan="3" style="width: 70%; text-align: center;">
+                        </td>
+                        <td id="logoExt" rowspan="4" style="width: 15%; text-align: center;">
+                            &nbsp;<img alt="" src="../../images/logo-actual.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Title" colspan="3" style="width: 70%; text-align: center;">
+                            <h2 id="tituloPrincipal">
+                                &nbsp;</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="User" colspan="3" style="width: 70%; text-align: center;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Name_User" colspan="3" style="width: 70%; text-align: center;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Bar">
+                <table width="100%">
+                    <tr>
+                        <td id="TMenu">
+                            MENU
+                        </td>
+                        <td id="Exit">
+                            <a href="../../login/Login_CGA.aspx">
+                                <img alt="Inicio" title="Salida" style="width: 35px; height: 35px;" src="../../images/exit.png" /></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="Medium" class="main">
+            <table width="100%">
+                <tr>
+                    <td id="panel_menu">
+                        <div id="container_menu" style="padding: 5px">
+                        </div>
+                    </td>
+                    <td id="panel_pag">
+                        <asp:ContentPlaceHolder ID="main" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="Footer" class="footer">
+            <table width="100%">
+                <tr>
+                    <td style="text-align: center;">
+                        <p id="Parraf_1">
+                            © Copyright SASIF 2016. Todos los derechos reservados</p>
+                        <p id="Parraf_2">
+                            El software Gestion y control de ordenes de trabajo ha sido desarrollado en la ciudad
+                            de Bogota, Colombia.</p>
+                        <p id="Parraf_3">
+                            Contactenos: Calle 25F # 81D - 04 | Telefonos: 4260634 - 2460775 | E-mail: sistemas@sasif.com.co
+                            | Bogota D.C. - Colombia</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

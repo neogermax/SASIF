@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Adm_OpcRolAjax.aspx.vb" Inherits="PanelSeguridad.Adm_OpcRolAjax" %>

@@ -1,0 +1,113 @@
+﻿/* --------------------------------------------------------------------------- */
+/* --------------------------- HEADER MASTER PAGE ---------------------------- */
+/* --------------------------------------------------------------------------- */
+
+/* -------       Label Usuario          ------*/
+#User, #Name_User
+{
+    color: #1B86D8;
+    font-weight: bold;
+}
+
+/* -------       Label Titulo          ------*/
+#tituloPrincipal
+{
+    color: #1B86D8;
+}
+
+/* -------       Label Hora           ------*/
+#Hours
+{
+    top: 4em;
+    right: 1em;
+    color: #1B86D8;
+    font: 14px/20px Verdana,sans-serif;
+    font-weight: bold;
+}
+
+/* -------       div encabezado      ------*/
+#Header
+{
+    float: none;
+    height: 145px;
+}
+
+/* -------         fondo            ------*/
+.header
+{
+    background: white;
+    background-position: center;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------- BAR MENU MASTER PAGE ---------------------------- */
+/* --------------------------------------------------------------------------- */
+
+/* -------         fondo            ------*/
+.Bar
+{
+    background: -webkit-linear-gradient(#6087A5, #2F638A); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6087A5, #2F638A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6087A5, #2F638A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6087A5, #2F638A); /* Standard syntax (must be last)*/
+    color: White;
+    border: none;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------- CONTENT MASTER PAGE ------_---------------------- */
+/* --------------------------------------------------------------------------- */
+
+/* -------         fondo            ------*/
+.main
+{
+    background: -webkit-linear-gradient(#E8EBEC, #BCC0C3); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E8EBEC, #BCC0C3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E8EBEC, #BCC0C3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E8EBEC, #BCC0C3); /* Standard syntax (must be last)*/
+    border: none;
+}
+
+/* -------         dimencion panel 1            ------*/
+#panel_menu
+{
+    width: 150px;
+    height: 500px;
+    vertical-align: text-top;
+    padding-left: 1px;
+}
+
+/* -------         dimencion panel21            ------*/
+#container_menu
+{
+    width: 200px;
+    height: 585px;
+    background-color: white;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    border: 1px solid #000000;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------- FOOTER MASTER PAGE ------_---------------------- */
+/* --------------------------------------------------------------------------- */
+
+/* -------         fondo            ------*/
+.footer
+{
+    background: -webkit-linear-gradient(#6087A5, #2F638A); /*For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6087A5, #2F638A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6087A5, #2F638A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6087A5, #2F638A); /* Standard syntax (must be last)*/
+    color: White;
+    border: none;
+}
+
+/* -------         parrafos            ------*/
+#Parraf_1, #Parraf_2, #Parraf_3
+{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: small;
+}

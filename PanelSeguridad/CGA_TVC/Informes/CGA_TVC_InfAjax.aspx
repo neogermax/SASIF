@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_TVC_InfAjax.aspx.vb" Inherits="PanelSeguridad.CGA_TVC_InfAjax" %>

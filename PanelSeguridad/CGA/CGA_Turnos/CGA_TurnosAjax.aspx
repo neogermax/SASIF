@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_TurnosAjax.aspx.vb" Inherits="PanelSeguridad.CGA_TurnosAjax" %>

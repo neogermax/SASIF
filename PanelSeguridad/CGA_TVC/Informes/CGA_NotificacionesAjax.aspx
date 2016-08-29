@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CGA_NotificacionesAjax.aspx.vb" Inherits="PanelSeguridad.CGA_NotificacionesAjax" %>

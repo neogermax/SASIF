@@ -1,0 +1,191 @@
+﻿/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                               ADMININSTRACION PARAMETRIZABLE                                                               */   
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de la barra de titulo*/
+#Container_title_Form
+{
+    background: url(../css/theme_blue_Sky/images/header.png);
+    background-repeat: repeat;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: 95%;
+}
+
+#Tabla_Title_form
+{
+    width: 100%;
+}
+
+#image_exit
+{
+    text-align: end;
+}
+
+#panel_pag
+{
+    vertical-align: text-top;
+    padding-left: 15px;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion marco del formulario*/
+
+*#Marco_link
+{
+    margin-top: 10px;
+    padding: 20px 26px;
+    background-color: silver;
+    border-radius: 20px 20px 20px 20px;
+    border-color: gray;
+    border-width: 5px;
+    border-style: outset;
+    width: 90%;
+}
+
+#Marco_btn_Form
+{
+    margin-top: 1px;
+    padding: 20px 20px;
+    background-color: silver;
+    border-radius: 15px 15px 15px 15px;
+    border-color: gray;
+    border-width: 5px;
+    border-style: outset;
+    width: 95%;
+    height: 40px;
+    text-align: center;
+}
+
+#Marco_trabajo_Form
+{
+    margin-top: 10px;
+    padding: 20px 20px;
+    background-color: silver;
+    border-radius: 15px 15px 15px 15px;
+    border-color: gray;
+    border-width: 5px;
+    border-style: outset;
+    width: 95%;
+    height: 300px;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las tablas de consultas link, roles, ocp rol, usuarios*/
+
+#container_Tlink, #container_Trol, #container_TopcRol, #container_TUser
+
+{
+    width: 800px;
+    height: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de los botones*/
+
+.BtnPerson
+{
+    width: 110px;
+    height: 28px;
+    background: url(../css/theme_blue_Sky/images/default.png);
+    background-repeat: repeat;
+    border-radius: 3px;
+    vertical-align: text-top;
+    border: none;
+}
+
+.BtnPerson_x
+{
+    background: url(../css/theme_blue_Sky/images/default.png);
+    background-repeat: repeat;
+    border-radius: 3px;
+    border: none;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de los formularios internos*/
+
+#TablaDatos
+{
+    width: 100%;
+    background-color: silver;
+    padding: 20px 26px;
+    border-radius: 0 0 20px 20px;
+    border-color: gray;
+    border-width: 5px;
+    border-style: outset;
+}
+
+#TablaConsulta
+{
+    width: 100%;
+    background-color: silver;
+    padding: 20px 26px;
+    border-radius: 0 0 20px 20px;
+    border-color: gray;
+    border-width: 5px;
+    border-style: outset;
+    text-align: center;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las cajas de texto */
+#TxtConsecutivo, #TxtParam1, #TxtParam2, #TxtDescription, #TxtRead, #TxtSigla, #TxtPlanta
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 80%;
+}
+
+#TxtRuta
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 90%;
+}
+
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de los drop list*/
+.SelectPerson
+{
+    width: 80%;
+    height: 20px;
+    background: url(../css/theme_blue_Sky/images/default.png);
+    background-repeat: repeat;
+    border-radius: 3px;
+    vertical-align: text-top;
+    border: none;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           CGA ADMININSTRACION PARAMETRIZABLE                                                               */   
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las cajas de texto */
+#TxtNombre, #TxtCECO, #TxtTiempo, #TxtHoraIni, #Txt_ID, #TxtName, #TxtDocument
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 80%;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion de las tablas de consultas link, roles, ocp rol, usuarios*/
+
+#container_TAcciones, #container_TArea, #container_TCausales, #container_TCentro, #container_TCentroCosto, #container_TGrpMaqunas, #container_TMaquina, #container_TOperario, #container_TTurnos
+
+{
+    width: 800px;
+    height: 400px;
+    height: 200px;
+    overflow: auto;
+}

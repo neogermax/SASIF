@@ -1,0 +1,101 @@
+﻿/*-----------------------CAMPOS GENERALES ---------------------------*/
+/*fuente para todos los campos*/
+h1, h2, h3, h4, table, tr, td
+{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/*----------------------- TITULO ---------------------------*/
+/*personalizacion del titulo*/
+#titulo_login
+{
+    text-align: center;
+    padding-bottom: 2%;
+    color: #1B86D8;
+}
+
+/*----------------------- FORMULARIO LOGIN ---------------------------*/
+/*ajuste de tamaño en los td*/
+
+#Container_title
+{
+    padding-top: 120px;
+}
+/*encasulado del tablaregistro*/
+#marco
+{
+    padding-bottom: 19.5%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+/*personalizacion de la tabla de entrada */
+#TablaRegistro
+{
+    width: 100%;
+    padding: 20px 26px;
+    border-radius: 0 0 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+/*perzonalizacion de labels*/
+#LblPassword, #Lbluser, #lblConfirmPassword, #LblShow
+{
+    font-weight: bold;
+    padding-left: 2em;
+}
+/*perzonalizacion de cajas de texto*/
+#TdPassword, #TdUser, #TdConfirmPassword, #TdCheck
+{
+    padding-left: 2em;
+    padding-right: 1em;
+}
+/*perzonalizacion de cajas de texto*/
+#TxtUser, #TxtPassword
+{
+    -webkit-appearance: none;
+    border: none;
+    width: 80%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------- PAG CAMBIO DE CONTRASEÑA ---------------------------*/
+/*personalizacion de la tabla de entrada */
+#TablaContraseña
+{
+    width: 100%;
+    padding: 20px 26px;
+    border-radius: 0 0 20px 20px;
+    background: -webkit-linear-gradient(#C6DEFF, #E2EFF9); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#C6DEFF, #E2EFF9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C6DEFF, #E2EFF9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C6DEFF, #E2EFF9); /* Standard syntax (must be last)*/
+    border: solid #79b7e7;
+    border-width: 1px;
+}
+
+#marco_CC
+{
+    padding-bottom: 16%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+#marco_RC
+{
+    padding-top: 15%;
+    padding-bottom: 16%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+#txtConfirmPassword
+{
+    width: 80%;
+    -webkit-appearance: none;
+    border: none;
+}
+

@@ -1,0 +1,2315 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PanelSeguridad
+</name>
+</assembly>
+<members>
+<member name="M:PanelSeguridad.Adm_LinksSQLClass.Read_AllLinks(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla links parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksSQLClass.InsertLinks(PanelSeguridad.Adm_LinksClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo link (INSERT)
+ </summary>
+	<param name="vp_Obj_Link"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksSQLClass.UpdateLinks(PanelSeguridad.Adm_LinksClass)">
+	<summary>
+ funcion que crea el query para la modificacion del link (UPDATE)
+ </summary>
+	<param name="vp_Obj_Link"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksSQLClass.DeleteLinks(PanelSeguridad.Adm_LinksClass)">
+	<summary>
+ funcion que crea el query para el estado del link (DELETE)
+ </summary>
+	<param name="vp_Obj_Link"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksSQLClass.listLinks(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de links para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.Consulta_CausalesAtrazo">
+	<summary>
+ traemos todos los datos para tabla CausalesAtrazo (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.InsertCausalesAtrazo">
+	<summary>
+ funcion que inserta en la tabla CausalesAtrazo (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.UpdateCausalesAtrazo">
+	<summary>
+ funcion que actualiza en la tabla CausalesAtrazo (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.EraseCausalesAtrazo">
+	<summary>
+ funcion que elimina en la tabla CausalesAtrazo (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.Insert(PanelSeguridad.OpeTurnosClass)">
+	<summary>
+ funcion que inserta en la BD el turno programado
+ </summary>
+	<param name="ObjTurno_Ope"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.ReadCharge_DropList_Turno(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.SearchCentroPlanta(System.String)">
+	<summary>
+ funcion que consulta el centro y planta del puesto de trabajo o maquina
+ </summary>
+	<param name="vp_S_ID_maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.AllFestivos">
+	<summary>
+ funcion que consulta todo los festivos del año
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.Allturno">
+	<summary>
+ funcion que consulta los tiempos de los turnos en la BD
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.ReadExist(PanelSeguridad.OpeTurnosClass)">
+	<summary>
+ funcion que consulta si eseditar o crear turnos
+ </summary>
+	<param name="ObjTurno_OP"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.ListCentroMaquina(System.String,System.String)">
+	<summary>
+ funcion que trae los datos de centro y planta por puesto de trabajo o maquina
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosSQLClass.listFestivos(System.String,System.String)">
+	<summary>
+ funcion que trae los datos de los festivos
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.LoginSQLClass.Update_ChagePassword(System.String,System.String)">
+	<summary>
+ funcion query para la actualizacion de la contrazeña desde el login
+ </summary>
+	<param name="pl_S_User"></param>
+	<param name="pl_S_Password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.LoginSQLClass.Update_PasswordADM(PanelSeguridad.LoginClass)">
+	<summary>
+ funcion query para la actualizacion de la contraseña desde el panel administrativo
+ </summary>
+	<param name="pl_obj_User"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.LoginSQLClass.Read_AllUserLogin">
+	<summary>
+ funcion query para la consulta tabla Usuarios para ingreso a la aplicacion
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.LoginSQLClass.ListLogin(System.String,System.String)">
+	<summary>
+ trae el listado solicitado por login
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:PanelSeguridad.Sasif.head">
+	<summary>
+Control head.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:PanelSeguridad.Sasif.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:PanelSeguridad.Sasif.main">
+	<summary>
+Control main.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.Consulta_Causales">
+	<summary>
+ traemos todos los datos para tabla Causales (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.InsertCausales">
+	<summary>
+ funcion que inserta en la tabla Causales (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.UpdateCausales">
+	<summary>
+ funcion que actualiza en la tabla Causales (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.EraseCausales">
+	<summary>
+ funcion que elimina en la tabla Causales (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.Consulta_CargaPasiva">
+	<summary>
+ traemos todos los datos para tabla CargaPasiva (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.InsertCargaPasiva">
+	<summary>
+ funcion que inserta en la tabla CargaPasiva (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.UpdateCargaPasiva">
+	<summary>
+ funcion que actualiza en la tabla CargaPasiva (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.EraseCargaPasiva">
+	<summary>
+ funcion que elimina en la tabla CargaPasiva (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.CargarDDL_Centro">
+	<summary>
+ funcion que carga el objeto DDL Centro
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.CargarDDL_Departamento">
+	<summary>
+ funcion que carga el objeto DDL DEPARTAMENTO DE SOLICITUD
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.CargarDDL_GprMaq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.CargarDDL_Maq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.Read_AllCargaPasiva(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla CargaPasiva parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.InsertCargaPasiva(PanelSeguridad.CGA_CargaPasivaClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo CargaPasiva (INSERT)
+ </summary>
+	<param name="vp_Obj_CargaPasiva"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.UpdateCargaPasiva(PanelSeguridad.CGA_CargaPasivaClass)">
+	<summary>
+ funcion que crea el query para la modificacion del CargaPasiva (UPDATE)
+ </summary>
+	<param name="vp_Obj_CargaPasiva"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.EraseCargaPasiva(PanelSeguridad.CGA_CargaPasivaClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del CargaPasiva (DELETE)
+ </summary>
+	<param name="vp_Obj_CargaPasiva"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.ReadCharge_DDL_Centro(System.String)">
+	<summary>
+ funcion que consulta la tabla centro para el DDl Centro
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.ReadCharge_DDL_Departamento(System.String)">
+	<summary>
+ funcion que consulta la tabla centro para el DDL DEPARTAMENTO DE SOLICITUD
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.ReadCharge_DDL_GrpMaquinas(System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla Grupo de maquinas para el DDl GrpMaquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.ReadCharge_DDL_Maquinas(System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla  maquinas para el DDl Maquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CargaPasivaSQLClass.listCargaPasiva(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de CargaPasiva para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfAjax.CargarDDL_Centro">
+	<summary>
+ funcion que carga el objeto DDL Centro
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfAjax.CargarDDL_GprMaq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfAjax.CargarDDL_Maq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfAjax.CargarPlanta">
+	<summary>
+ Funcion que trae la planta del centro deseado 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfAjax.DatosTVC">
+	<summary>
+ funcion que trae los datos para las ordenes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.Read_AllCausales(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Causales parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.InsertCausales(PanelSeguridad.CGA_CausalesClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Causales (INSERT)
+ </summary>
+	<param name="vp_Obj_Causales"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.UpdateCausales(PanelSeguridad.CGA_CausalesClass)">
+	<summary>
+ funcion que crea el query para la modificacion del Causales (UPDATE)
+ </summary>
+	<param name="vp_Obj_Causales"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.EraseCausales(PanelSeguridad.CGA_CausalesClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Causales (DELETE)
+ </summary>
+	<param name="vp_Obj_Causales"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesSQLClass.listCausales(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Causales para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.Read_AllCentro(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Centro parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.InsertCentro(PanelSeguridad.CGA_CentroClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Centro (INSERT)
+ </summary>
+	<param name="vp_Obj_Centro"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.UpdateCentro(PanelSeguridad.CGA_CentroClass)">
+	<summary>
+ funcion que crea el query para la modificacion del Centro (UPDATE)
+ </summary>
+	<param name="vp_Obj_Centro"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.EraseCentro(PanelSeguridad.CGA_CentroClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Centro (DELETE)
+ </summary>
+	<param name="vp_Obj_Centro"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroSQLClass.listCentro(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Centro para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosAjax.Consulta_Festivos">
+	<summary>
+ traemos todos los datos para tabla Festivos (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosAjax.InsertFestivos">
+	<summary>
+ funcion que inserta en la tabla Festivos (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosAjax.EraseFestivos">
+	<summary>
+ funcion que elimina en la tabla Festivos (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosAjax.Consulta_Repetido(System.String,System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.Read_AllOperario(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Operario parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.InsertOperario(PanelSeguridad.CGA_OperarioClass)">
+	<summary>
+ funcion que crea el query para la insercion de la nueva Operario (INSERT)
+ </summary>
+	<param name="vp_Obj_Operario"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.UpdateOperario(PanelSeguridad.CGA_OperarioClass)">
+	<summary>
+ funcion que crea el query para la modificacion de la Operario  (UPDATE)
+ </summary>
+	<param name="vp_Obj_Operario"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.EraseOperario(PanelSeguridad.CGA_OperarioClass)">
+	<summary>
+ funcion que crea el query para la eliminacion de la turno (DELETE)
+ </summary>
+	<param name="vp_Obj_Operario"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.ReadCharge_DDL_Centro">
+	<summary>
+ funcion que consulta la tabla centro para el DDl Centro
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.ReadCharge_DDL_CentroCosto">
+	<summary>
+ funcion que consulta la tabla Grupo de Operarios para el DDl CentroCosto
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.ReadCharge_DDL_Area">
+	<summary>
+ funcion que consulta la tabla Grupo de Operarios para el DDl CentroCosto
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioSQLClass.listOperario(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Operario para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_NotificacionesSQLClass.GridNotificaciones(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta las ordenes segun los fitros
+ </summary>
+	<param name="vp_S_ID_maquina"></param>
+	<param name="vp_S_FechaIni"></param>
+	<param name="vp_S_FechaFin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_NotificacionesSQLClass.ListNotificacion(System.String,System.String)">
+	<summary>
+ trae el listado de ordenes por puesto de trabajo
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.menuAjax.Consulta_menu">
+	<summary>
+ traemos todos los datos para construir el menu
+ </summary>
+	<remarks></remarks>
+</member><member name="F:PanelSeguridad.Sasif_menu.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PanelSeguridad.Sasif_menu.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PanelSeguridad.Sasif_menu.main">
+	<summary>
+main control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.Consulta_Maquina">
+	<summary>
+ traemos todos los datos para tabla Maquina (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.InsertMaquina">
+	<summary>
+ funcion que inserta en la tabla Maquina (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.UpdateMaquina">
+	<summary>
+ funcion que actualiza en la tabla Maquina (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.EraseMaquina">
+	<summary>
+ funcion que elimina en la tabla Maquina (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL consulta
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.Carga_Centro">
+	<summary>
+ funcion que carga el objeto DDL Centro
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.Carga_GrpMaquinas">
+	<summary>
+ funcion que carga el objeto DDL grupo de maquinas
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.Carga_CCosto">
+	<summary>
+ funcion que carga el objeto  DDL centro de costo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.Read_AllOpcRol(System.String,System.String,System.String)">
+	<summary>
+ crea la consulta para la tabla opcion perfil parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.InsertOpcRol(PanelSeguridad.Adm_OpcRolClass)">
+	<summary>
+ funcion que crea el query para la insercion de la nueva opcion rol (INSERT)
+ </summary>
+	<param name="vp_Obj_OpcRol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.UpdateOpcRol(PanelSeguridad.Adm_OpcRolClass)">
+	<summary>
+ funcion que crea el query para la modificacion del opcion rol (UPDATE)
+ </summary>
+	<param name="vp_Obj_OpcRol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.EraseOpcRol(PanelSeguridad.Adm_OpcRolClass)">
+	<summary>
+ funcion que crea el query para la eliminacion de la opcion rol (DELETE)
+ </summary>
+	<param name="vp_Obj_OpcRol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.ReadCharge_DL_Rol">
+	<summary>
+ funcion que consulta el rol para el id de la tabla
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.ReadCharge_DL_Subrol">
+	<summary>
+ funcion que consulta el subrol
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.ReadCharge_DL_Links(System.String)">
+	<summary>
+ funcion que consulta los links existentes
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolSQLClass.listOpcRol(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de opcion roles para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_ResetUserAjax.Consulta_Existe(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_exist"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.Consulta_Roles">
+	<summary>
+ traemos todos los datos para tabla ROLES (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.InsertRol">
+	<summary>
+ funcion que inserta en la tabla Roles (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.DeleteRol">
+	<summary>
+ funcion que cambia el estado a inhabilitado en la tabla ROLES (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.UpdateLRol">
+	<summary>
+ funcion que actualiza en la tabla ROLES (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.Read_AllCausalesAtrazo(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla CausalesAtrazo parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.InsertCausalesAtrazo(PanelSeguridad.CGA_CausalesAtrazoClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo CausalesAtrazo (INSERT)
+ </summary>
+	<param name="vp_Obj_CausalesAtrazo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.UpdateCausalesAtrazo(PanelSeguridad.CGA_CausalesAtrazoClass)">
+	<summary>
+ funcion que crea el query para la modificacion del CausalesAtrazo (UPDATE)
+ </summary>
+	<param name="vp_Obj_CausalesAtrazo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.EraseCausalesAtrazo(PanelSeguridad.CGA_CausalesAtrazoClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del CausalesAtrazo (DELETE)
+ </summary>
+	<param name="vp_Obj_CausalesAtrazo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CausalesAtrazoSQLClass.listCausalesAtrazo(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de CausalesAtrazo para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.InsertDETALLE_TVC_OP">
+	<summary>
+ funcion que inserta en la tabla DETALLE_TVC_OP (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.UpdateDETALLE_TVC_OP">
+	<summary>
+ funcion que actualiza en la tabla DETALLE_TVC_OP (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Operario">
+	<summary>
+ funcion que carga el objeto DDL operario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Operario_Det">
+	<summary>
+ funcion que carga el objeto DDL operario nueva causal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Causal">
+	<summary>
+ funcion que carga el objeto DDL CAUSALSAP
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Turno">
+	<summary>
+ funcion que carga el objeto DDL Turno
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Accion">
+	<summary>
+ funcion que carga el objeto DDL Accion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.CargarDDL_Area">
+	<summary>
+ funcion que carga el objeto DDL Area
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.Cargar_Centro_planta">
+	<summary>
+ funcion que trae el centro y planta del puesto de trabajo o maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.DatosTVC">
+	<summary>
+ funcion que trae los datos para las ordenes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.TVCEncabezadoDet">
+	<summary>
+ funcion que trae el encabesado del detalle TVC
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpAjax.TVCGridDet">
+	<summary>
+ funcion que trae el los datos para el grid del detalle TVC
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Conector.ObjLoad_All(System.String,System.String)">
+	<summary>
+ funcion generica para la consulta de cualquier tabla con o sin condiciones 
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Conector.StrInsert_and_Update_All(System.String)">
+	<summary>
+ funcion generica para la insercion, actualizacion o eliminar de datos en la BD
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Conector.IDis(System.String)">
+	<summary>
+ funcion generica para consultas de un solo resultado tipo integer
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Conector.typeConexion">
+	<summary>
+ funcion de swicheo de conexion a BD por medio de vlores del web config
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.Consulta_OpcRol">
+	<summary>
+ traemos todos los datos para tabla opcion roles (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.InsertOpcRol">
+	<summary>
+ funcion que inserta en la tabla opcion roles (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.UpdateOpcRol">
+	<summary>
+ funcion que actualiza en la tabla opcion roles (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.EraseOpcRol">
+	<summary>
+ funcion que elimina en la tabla opcion roles (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL opcion rol
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.Cargar_Sub_Rol">
+	<summary>
+ funcion que carga el objeto DDL subtipo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.Carga_Rol">
+	<summary>
+ funcion que carga el objeto DDL ID
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.Cargar_Links">
+	<summary>
+ funcion que carga el objeto DDL links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_OpcRolAjax.Consulta_Repetido(System.String,System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.Read_AllCentroCosto(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla CentroCosto parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.InsertCentroCosto(PanelSeguridad.CGA_CentroCostoClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo CentroCosto (INSERT)
+ </summary>
+	<param name="vp_Obj_CentroCosto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.UpdateCentroCosto(PanelSeguridad.CGA_CentroCostoClass)">
+	<summary>
+ funcion que crea el query para la modificacion del CentroCosto (UPDATE)
+ </summary>
+	<param name="vp_Obj_CentroCosto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.EraseCentroCosto(PanelSeguridad.CGA_CentroCostoClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del CentroCosto (DELETE)
+ </summary>
+	<param name="vp_Obj_CentroCosto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoSQLClass.listCentroCosto(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de CentroCosto para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.Consulta_Centro">
+	<summary>
+ traemos todos los datos para tabla centro (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.InsertCentro">
+	<summary>
+ funcion que inserta en la tabla Centro (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.UpdateCentro">
+	<summary>
+ funcion que actualiza en la tabla Centro (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.EraseCentro">
+	<summary>
+ funcion que elimina en la tabla Centro (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.Read_AllMaquina(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Maquina parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.InsertMaquina(PanelSeguridad.CGA_MaquinaClass)">
+	<summary>
+ funcion que crea el query para la insercion de la nueva Maquina (INSERT)
+ </summary>
+	<param name="vp_Obj_Maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.UpdateMaquina(PanelSeguridad.CGA_MaquinaClass)">
+	<summary>
+ funcion que crea el query para la modificacion de la Maquina  (UPDATE)
+ </summary>
+	<param name="vp_Obj_Maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.EraseMaquina(PanelSeguridad.CGA_MaquinaClass)">
+	<summary>
+ funcion que crea el query para la eliminacion de la turno (DELETE)
+ </summary>
+	<param name="vp_Obj_Maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.ReadCharge_DDL_Centro">
+	<summary>
+ funcion que consulta la tabla centro para el DDl Centro
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.ReadCharge_DDL_GrpMaquinas">
+	<summary>
+ funcion que consulta la tabla Grupo de maquinas para el DDl GrpMaquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.ReadCharge_DDL_CCosto">
+	<summary>
+ funcion que consulta la tabla centro de costo para el DDl CCosto
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_MaquinaSQLClass.listMaquina(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Maquina para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.Consulta_Operario">
+	<summary>
+ traemos todos los datos para tabla Operario (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.InsertOperario">
+	<summary>
+ funcion que inserta en la tabla Operario (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.UpdateOperario">
+	<summary>
+ funcion que actualiza en la tabla Operario (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.EraseOperario">
+	<summary>
+ funcion que elimina en la tabla Operario (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL consulta
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.Carga_Centro">
+	<summary>
+ funcion que carga el objeto DDL Centro
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.Carga_CentroCosto">
+	<summary>
+ funcion que carga el objeto DDL Centro De Costos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.Carga_Area">
+	<summary>
+ funcion que carga el objeto DDL Centro De Costos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_OperarioAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.Consulta_Turno">
+	<summary>
+ traemos todos los datos para tabla turno (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.InsertTurnos">
+	<summary>
+ funcion que inserta en la tabla turnos (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.UpdateTurnos">
+	<summary>
+ funcion que actualiza en la tabla turnos (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.EraseTurnos">
+	<summary>
+ funcion que elimina en la tabla turnos (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CambioPasswordAjax.CambioContraseña">
+	<summary>
+ funcion que ejecuta el proceso de cambio de clave
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.Read_AllAcciones(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Acciones parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.InsertAcciones(PanelSeguridad.CGA_AccionesClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Acciones (INSERT)
+ </summary>
+	<param name="vp_Obj_Acciones"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.UpdateAcciones(PanelSeguridad.CGA_AccionesClass)">
+	<summary>
+ funcion que crea el query para la modificacion del Acciones (UPDATE)
+ </summary>
+	<param name="vp_Obj_Acciones"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.EraseAcciones(PanelSeguridad.CGA_AccionesClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Acciones (DELETE)
+ </summary>
+	<param name="vp_Obj_Acciones"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesSQLClass.listAcciones(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Acciones para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.Consulta_Area">
+	<summary>
+ traemos todos los datos para tabla Area (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.InsertArea">
+	<summary>
+ funcion que inserta en la tabla Area (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.UpdateArea">
+	<summary>
+ funcion que actualiza en la tabla Area (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.EraseArea">
+	<summary>
+ funcion que elimina en la tabla Area (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.Consulta_GRPMaquinas">
+	<summary>
+ traemos todos los datos para tabla GRPMaquinas (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.InsertGRPMaquinas">
+	<summary>
+ funcion que inserta en la tabla GRPMaquinas (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.UpdateGRPMaquinas">
+	<summary>
+ funcion que actualiza en la tabla GRPMaquinas (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.EraseGRPMaquinas">
+	<summary>
+ funcion que elimina en la tabla GRPMaquinas (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.CreateTurnos_Operacional">
+	<summary>
+ fucion para elguardado en bloque
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.InsertList">
+	<summary>
+ creamos lista para ingreso a la BD
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.CargarDDL_Operario">
+	<summary>
+ funcion que carga el objeto DDL operario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.CargarDDL_Turno">
+	<summary>
+ funcion que carga el objeto DDL Turno
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.Cargar_Centro_planta">
+	<summary>
+ funcion que trae el centro y planta del puesto de trabajo o maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.Cargar_Festivo">
+	<summary>
+ funcion que trae todos los festivos del año
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.OpeTurnosAjax.CargarVector_Turno">
+	<summary>
+ funcion que trae los tiempos de cada turno
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.Consulta_Links">
+	<summary>
+ traemos todos los datos para tabla links (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.InsertLInk">
+	<summary>
+ funcion que inserta en la tabla links (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.UpdateLInk">
+	<summary>
+ funcion que actualiza en la tabla links (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.DeleteLInk">
+	<summary>
+ funcion que cambia el estado a inhabilitado en la tabla links (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_LinksAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.Read_AllRoles(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla roles parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.DeleteRol(PanelSeguridad.Adm_RolesClass)">
+	<summary>
+ funcion que crea el query para el estado del rol (DELETE)
+ </summary>
+	<param name="vp_Obj_Rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.UpdateRol(PanelSeguridad.Adm_RolesClass)">
+	<summary>
+ funcion que crea el query para la modificacion del rol (UPDATE)
+ </summary>
+	<param name="vp_Obj_Rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.InsertRol(PanelSeguridad.Adm_RolesClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo rol (INSERT)
+ </summary>
+	<param name="vp_Obj_rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_RolesSQLClass.listrol(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de ROLES para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.Read_AllArea(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Area parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.InsertArea(PanelSeguridad.CGA_AreaClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Area (INSERT)
+ </summary>
+	<param name="vp_Obj_Area"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.UpdateArea(PanelSeguridad.CGA_AreaClass)">
+	<summary>
+ funcion que crea el query para la modificacion del Area (UPDATE)
+ </summary>
+	<param name="vp_Obj_Area"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.EraseArea(PanelSeguridad.CGA_AreaClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Area (DELETE)
+ </summary>
+	<param name="vp_Obj_Area"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AreaSQLClass.listArea(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Area para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.Consulta_CentroCostos">
+	<summary>
+ traemos todos los datos para tabla CentroCostos (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.InsertCentroCostos">
+	<summary>
+ funcion que inserta en la tabla CentroCostos (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.UpdateCentroCostos">
+	<summary>
+ funcion que actualiza en la tabla CentroCostos (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.EraseCentroCostos">
+	<summary>
+ funcion que elimina en la tabla CentroCostos (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_CentroCostoAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:PanelSeguridad.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:PanelSeguridad.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.InsertTVC(PanelSeguridad.CGA_TVC_OPDetClass)">
+	<summary>
+ funcion que crea el query para la insercion de la tabla DETALLE_TVC_OP (INSERT)
+ </summary>
+	<param name="vp_Obj_TVCDeT"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.UpdateTVC(PanelSeguridad.CGA_TVC_OPDetClass)">
+	<summary>
+ funcion que crea el query para la modificacion de la tabla DETALLE_TVC_OP (UPDATE)
+ </summary>
+	<param name="vp_Obj_TVCDeT"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList_operario(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList_Causal(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Type"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList_Turno(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList_Accion(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ReadCharge_DropList_Area(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.SearchCentroPlanta(System.String)">
+	<summary>
+ funcion que consulta el centro y planta del puesto de trabajo o maquina
+ </summary>
+	<param name="vp_S_ID_maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.GridTVC(System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta las ordenes segun los fitros
+ </summary>
+	<param name="vp_S_ID_maquina"></param>
+	<param name="vp_S_FechaIni"></param>
+	<param name="vp_S_FechaFin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.EncTVCDet(System.String,System.String,System.String,System.String)">
+	<summary>
+ consulta el detalle de la orden seleccionada
+ </summary>
+	<param name="vp_S_Maq"></param>
+	<param name="vp_S_Orden"></param>
+	<param name="vp_S_Opera"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.GridDetTVC(System.String,System.String,System.String,System.String)">
+	<summary>
+ consulta que trae los datos del grid de TVC_detalle
+ </summary>
+	<param name="vp_S_Maq"></param>
+	<param name="vp_S_Orden"></param>
+	<param name="vp_S_Opera"></param>
+	<param name="vp_S_Centro"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ListCentroMaquina(System.String,System.String)">
+	<summary>
+ funcion que trae los datos de centro y planta por puesto de trabajo o maquina
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ListTVC(System.String,System.String)">
+	<summary>
+ trae el listado de ordenes por puesto de trabajo
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ListEncTVCDet(System.String,System.String)">
+	<summary>
+ trae el listado de detalle de la orden seleccionada por operacion y puesto de trabajo
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.ListGridTVCDet(System.String,System.String)">
+	<summary>
+ trae el listado de detalle de la orden seleccionada por operacion y puesto de trabajo
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.Semaforo(System.DateTime,System.String)">
+	<summary>
+ FUNCION QUE TRAE EL RESULTADO PARA EL SEMAFORO
+ </summary>
+	<param name="vp_D_Fecha"></param>
+	<param name="vp_S_Estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.Calculo_TPlaneado(System.Decimal,System.Decimal,System.Int32)">
+	<summary>
+ calcula el tiempo planeado por registro
+ </summary>
+	<param name="vp_D_Preparacion"></param>
+	<param name="vp_D_Maquina"></param>
+	<param name="vp_I_Cantidad"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_OpSQLClass.Calculo_TReal(System.Decimal,System.Decimal)">
+	<summary>
+ calcula el tiempo real por registro
+ </summary>
+	<param name="vp_D_Maquina"></param>
+	<param name="vp_D_Preparacion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.LoginAjax.ingresar">
+	<summary>
+ 'funcion que valida contra la BD si el usuario y contraseña son correctos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.MenuSQLClass.Read_AllOptionsMenu(System.String)">
+	<summary>
+ crea la consulta para el menu
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.MenuSQLClass.listMenu(System.String,System.String)">
+	<summary>
+ funcion que trae el listado para armar el menu
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.Consulta_User">
+	<summary>
+ traemos todos los datos para tabla Usuarios (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.InsertUser">
+	<summary>
+ funcion que inserta en la tabla Usuarios (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.UpdateUser">
+	<summary>
+ funcion que actualiza en la tabla Usuarios (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.DeleteUser">
+	<summary>
+ funcion que elimina en la tabla opcion roles (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL opcion rol
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.Cargar_Rol">
+	<summary>
+ funcion que carga el objeto DDL rol
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.Consulta_Acciones">
+	<summary>
+ traemos todos los datos para tabla Acciones (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.InsertAcciones">
+	<summary>
+ funcion que inserta en la tabla Acciones (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.UpdateAcciones">
+	<summary>
+ funcion que actualiza en la tabla Acciones (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.EraseAcciones">
+	<summary>
+ funcion que elimina en la tabla Acciones (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_AccionesAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.Read_AllLMaterial(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla LMaterial parametrizada (READ)
+ </summary>
+	<param name="vLI_S_Filtro"></param>
+	<param name="vLI_S_Opcion"></param>
+	<param name="vLI_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.InsertLMaterial(PanelSeguridad.CGA_LMaterialClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo LMaterial (INSERT)
+ </summary>
+	<param name="vLI_Obj_LMaterial"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.UpdateLMaterial(PanelSeguridad.CGA_LMaterialClass)">
+	<summary>
+ funcion que crea el query para la modificacion del LMaterial (UPDATE)
+ </summary>
+	<param name="vLI_Obj_LMaterial"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.EraseLMaterial(PanelSeguridad.CGA_LMaterialClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del LMaterial (DELETE)
+ </summary>
+	<param name="vLI_Obj_LMaterial"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vLI_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialSQLClass.listLMaterial(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de LMaterial para armar la tabla
+ </summary>
+	<param name="vLI_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.Read_AllTurnos(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla turnos parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.InsertTurnos(PanelSeguridad.CGA_TurnosClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo TURNO (INSERT)
+ </summary>
+	<param name="vp_Obj_Turno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.UpdateTurnos(PanelSeguridad.CGA_TurnosClass)">
+	<summary>
+ funcion que crea el query para la modificacion del turno (UPDATE)
+ </summary>
+	<param name="vp_Obj_Turno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.EraseTurnos(PanelSeguridad.CGA_TurnosClass)">
+	<summary>
+ funcion que crea el query para la eliminacion de la turno (DELETE)
+ </summary>
+	<param name="vp_Obj_Turno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TurnosSQLClass.listTurnos(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de turnos para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.ReadCharge_DDL_Centro(System.String)">
+	<summary>
+ funcion que consulta la tabla centro para el DDl Centro
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.ReadCharge_DDL_GrpMaquinas(System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla Grupo de maquinas para el DDl GrpMaquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.ReadCharge_DDL_Maquinas(System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla  maquinas para el DDl Maquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.SearchPlanta(System.String)">
+	<summary>
+ funcion que consulta planta del centro
+ </summary>
+	<param name="vp_S_ID_Centro"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.GridTVC(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta las ordenes segun los fitros
+ </summary>
+	<param name="vp_S_ID_maquina"></param>
+	<param name="vp_S_FechaIni"></param>
+	<param name="vp_S_FechaFin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.ListCentro(System.String,System.String)">
+	<summary>
+ funcion que trae los datos planta por Centro
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.ListTVC(System.String,System.String)">
+	<summary>
+ trae el listado de ordenes por puesto de trabajo
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.Semaforo(System.DateTime,System.String)">
+	<summary>
+ FUNCION QUE TRAE EL RESULTADO PARA EL SEMAFORO
+ </summary>
+	<param name="vp_D_Fecha"></param>
+	<param name="vp_S_Estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.Calculo_TPlaneado(System.Decimal,System.Decimal,System.Int32)">
+	<summary>
+ calcula el tiempo planeado por registro
+ </summary>
+	<param name="vp_D_Preparacion"></param>
+	<param name="vp_D_Maquina"></param>
+	<param name="vp_I_Cantidad"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_TVC_InfSQLClass.Calculo_TReal(System.Decimal,System.Decimal)">
+	<summary>
+ calcula el tiempo real por registro
+ </summary>
+	<param name="vp_D_Preparacion"></param>
+	<param name="vp_D_Maquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.Read_AllUser(System.String,System.String,System.String)">
+	<summary>
+ crea la consulta para la tabla Usuarios parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.InsertUser(PanelSeguridad.Adm_UsuarioClass)">
+	<summary>
+ funcion que crea el query para la insercion del nuevo usuario (INSERT)
+ </summary>
+	<param name="vp_Obj_User"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.UpdateUser(PanelSeguridad.Adm_UsuarioClass)">
+	<summary>
+ funcion que crea el query para la modificacion del usuario (UPDATE)
+ </summary>
+	<param name="vp_ObjUser"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.DeleteUser(PanelSeguridad.Adm_UsuarioClass)">
+	<summary>
+ funcion que crea el query para el estado del Usuario(DELETE)
+ </summary>
+	<param name="vp_Obj_User"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.ReadCharge_DL_Rol">
+	<summary>
+ funcion que consulta el rol
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.Adm_UsuarioSQLClass.listUSer(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Usuarios para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.Consulta_Pareto">
+	<summary>
+ traemos todos los datos para tabla Pareto (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.InsertPareto">
+	<summary>
+ funcion que inserta en la tabla Pareto (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.UpdatePareto">
+	<summary>
+ funcion que actualiza en la tabla Pareto (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.ErasePareto">
+	<summary>
+ funcion que elimina en la tabla Pareto (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.Consulta_VDesbordamiento">
+	<summary>
+ traemos todos los datos para tabla VDesbordamiento (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.InsertVDesbordamiento">
+	<summary>
+ funcion que inserta en la tabla VDesbordamiento (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.UpdateVDesbordamiento">
+	<summary>
+ funcion que actualiza en la tabla VDesbordamiento (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.EraseVDesbordamiento">
+	<summary>
+ funcion que elimina en la tabla VDesbordamiento (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.CargarDDL_Centro">
+	<summary>
+ funcion que carga el objeto DDL Centro
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.CargarDDL_GprMaq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.CargarDDL_Maq">
+	<summary>
+ funcion que carga el objeto DDL Grupo de maquina
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.EncriptarClass.Encriptacion(System.String)">
+	<summary>
+ funcion para encriptacion del password diseñada por
+ German Alejandro Rodriguez
+ </summary>
+	<param name="pl_S_password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.EncriptarClass.Encriptacion_MD5(System.String)">
+	<summary>
+ funcion para encriptacion del password MD5
+ </summary>
+	<param name="SourceText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.ReadExist(System.String,System.String,System.String,System.String)">
+	<summary>
+ funcion generica para hacer el query si esta repetido el ID 
+ </summary>
+	<param name="vp_S_NameTabla"></param>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.ReadExist_VariantKeys(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ funcion generica para hacer el query si esta repetido el ID conformadopor varios campos 
+ </summary>
+	<param name="vp_S_NameTabla"></param>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.ChargeEncabezado(System.String)">
+	<summary>
+ crea la consulta para la tabla encabezado trae los datps de la aplicacion
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.ListEncabezado(System.String,System.String)">
+	<summary>
+ GENERA LA LISTA PARA GUARDAR LOSDATOS DE PROGRAMA
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.listdrop(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de campos de CUALQUIER TABLA para armar el droplist
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.GeneralSQLClass.listdropFlex(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de campos de CUALQUIER TABLA para armar el droplist con variable
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosSQLClass.Read_AllFestivos(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Festivos parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosSQLClass.InsertFestivos(PanelSeguridad.CGA_FestivosClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Festivos (INSERT)
+ </summary>
+	<param name="vp_Obj_Festivos"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosSQLClass.EraseFestivos(PanelSeguridad.CGA_FestivosClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Festivos (DELETE)
+ </summary>
+	<param name="vp_Obj_Festivos"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_FestivosSQLClass.listFestivos(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Festivos para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.Read_AllGrpMaquina(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla GrpMaquina parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.InsertGrpMaquina(PanelSeguridad.CGA_GrpMaquinaClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo GrpMaquina (INSERT)
+ </summary>
+	<param name="vp_Obj_GrpMaquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.UpdateGrpMaquina(PanelSeguridad.CGA_GrpMaquinaClass)">
+	<summary>
+ funcion que crea el query para la modificacion del GrpMaquina (UPDATE)
+ </summary>
+	<param name="vp_Obj_GrpMaquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.EraseGrpMaquina(PanelSeguridad.CGA_GrpMaquinaClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del GrpMaquina (DELETE)
+ </summary>
+	<param name="vp_Obj_GrpMaquina"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_GrpMaquinaSQLClass.listGrpMaquina(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de GrpMaquina para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.Consulta_LMaterial">
+	<summary>
+ traemos todos los datos para tabla LMaterial (READ)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.InsertLMaterial">
+	<summary>
+ funcion que inserta en la tabla LMaterial (INSERT)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.UpdateLMaterial">
+	<summary>
+ funcion que actualiza en la tabla LMaterial (UPDATE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.EraseLMaterial">
+	<summary>
+ funcion que elimina en la tabla LMaterial (DELETE)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.CargarDroplist">
+	<summary>
+ funcion que carga el objeto DDL Links
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_LMaterialAjax.Consulta_Repetido(System.String)">
+	<summary>
+ funcion que valida si el id esta en la BD
+ </summary>
+	<param name="vp_S_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.Read_AllPareto(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla Pareto parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.InsertPareto(PanelSeguridad.CGA_ParetoClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo Pareto (INSERT)
+ </summary>
+	<param name="vp_Obj_Pareto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.UpdatePareto(PanelSeguridad.CGA_ParetoClass)">
+	<summary>
+ funcion que crea el query para la modificacion del Pareto (UPDATE)
+ </summary>
+	<param name="vp_Obj_Pareto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.ErasePareto(PanelSeguridad.CGA_ParetoClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del Pareto (DELETE)
+ </summary>
+	<param name="vp_Obj_Pareto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_ParetoSQLClass.listPareto(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de Pareto para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.Read_AllVDesbordamiento(System.String,System.String,System.String)">
+	<summary>
+ creala consulta para la tabla VDesbordamiento parametrizada (READ)
+ </summary>
+	<param name="vp_S_Filtro"></param>
+	<param name="vp_S_Opcion"></param>
+	<param name="vp_S_Contenido"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.InsertVDesbordamiento(PanelSeguridad.CGA_VDesbordamientoClass)">
+	<summary>
+ funcion que crea el query para la insercion de nuevo VDesbordamiento (INSERT)
+ </summary>
+	<param name="vp_Obj_VDesbordamiento"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.UpdateVDesbordamiento(PanelSeguridad.CGA_VDesbordamientoClass)">
+	<summary>
+ funcion que crea el query para la modificacion del VDesbordamiento (UPDATE)
+ </summary>
+	<param name="vp_Obj_VDesbordamiento"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.EraseVDesbordamiento(PanelSeguridad.CGA_VDesbordamientoClass)">
+	<summary>
+ funcion que crea el query para la eliminacion del VDesbordamiento (DELETE)
+ </summary>
+	<param name="vp_Obj_VDesbordamiento"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.ReadCharge_DropList(System.String)">
+	<summary>
+ crea la consulta para cargar el combo
+ </summary>
+	<param name="vp_S_Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.ReadCharge_DDL_Centro(System.String)">
+	<summary>
+ funcion que consulta la tabla centro para el DDl Centro
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.ReadCharge_DDL_GrpMaquinas(System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla Grupo de maquinas para el DDl GrpMaquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.ReadCharge_DDL_Maquinas(System.String,System.String,System.String)">
+	<summary>
+ funcion que consulta la tabla  maquinas para el DDl Maquinas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_VDesbordamientoSQLClass.listVDesbordamiento(System.String,System.String)">
+	<summary>
+ funcion que trae el listado de VDesbordamiento para armar la tabla
+ </summary>
+	<param name="vp_S_StrQuery"></param>
+	<param name="vg_S_StrConexion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.CGA_NotificacionesAjax.DatosNotificacion">
+	<summary>
+ funcion que trae los datos para las notificaciones
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PanelSeguridad.SasifMasterAjax.ListEncabezado">
+	<summary>
+ funcion que trae los datos del aplicativo
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
